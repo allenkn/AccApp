@@ -4,6 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "devserver": "npm run build:devserver && npm run start:devserver && npm run start",
+    "build:devserver": "tsc --lib es6 --downlevelIteration dev.server.ts",
+    "start:devserver": "start node dev.server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

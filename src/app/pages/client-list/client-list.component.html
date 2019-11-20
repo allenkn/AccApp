@@ -1,0 +1,54 @@
+<div class="centered-content">
+    <div class="task-manager-container">
+  
+    <div class="sidebar has-background-white">
+      <h1 class="title has-text-primary">
+        Menu
+      </h1>
+    <div class="list-menu">
+      <button class="button is-primary has-text-white"routerLink="/">
+        Home
+      </button>
+      <br>
+      <button class="button is-primary has-text-white" routerLink="/client-list">
+        Client List
+      </button>
+      <br>
+      <button class="button is-primary has-text-white" routerLink ="/sales-report">
+        Sales Report
+      </button>
+      <br>
+      <button class="button is-primary has-text-white" routerLink= '/main-ledger'>
+        Ledger
+      </button>
+      <br>
+      <button class="button is-primary has-text-white" routerLink = '/entry-main'>
+        New Entries
+      </button>
+  
+    </div>
+     <button class="button is-primary has-text-white">Exit</button>
+    </div>
+    <div class="client-entry-half has-background-light">
+      <h1 class="title has-text-primary">
+        Client Entry
+      </h1>
+        <div class='input_container'>
+        <h1 class = 'input_headings'>Client Name</h1>
+        <input [(ngModel)]="register.username"><br>
+        <h1 class = 'input_headings'>Password</h1>
+        <input [(ngModel)]="register.password" type="password"><br>
+        <h1 class = 'input_headings'>Email</h1>
+        <input [(ngModel)]="register.email"><br><br>
+        <button class="button_one is-primary has-text-white" (click)="registerUser()">Register User</button>
+    </div>
+    </div>
+      <br>
+    <div class="bottom-menu">
+      
+    </div>
+  
+  </div>
+  </div>
+  
+  
